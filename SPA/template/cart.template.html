@@ -1,0 +1,15 @@
+﻿<div class="row" id="cartContent">
+
+</div>
+<script id="cartItem" type="text/x-kendo-template">
+    #console.log(data);#
+    # for (var i = 0; i < data.length; i++) { 
+    var item = data[i];
+    #
+     <div class="col-xs-6 col-lg-4">
+        <h2>#=item.name#</h2>
+        <p><img src="#=item.image#" alt="#=item.name#" class="img-thumbnail"></p>
+        <p><a class="btn btn-default" href="\\#/item/#=item.id#" role="button">View details »</a></p>
+    </div>
+    #}#
+</script>

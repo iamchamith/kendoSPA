@@ -1,0 +1,28 @@
+﻿<form id="settings">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" data-bind="value:email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Name</label>
+        <input type="text" class="form-control" data-bind="value:name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Dob</label>
+        <input data-role="datepicker"
+               data-bind="value: selectedDate"
+               style="width: 100%">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Gender</label>
+        <input data-role="combobox"
+               data-placeholder="select the gender"
+               data-text-field="text"
+               data-value-field="value"
+               data-bind="value: gender,
+                              source: genders"
+               style="width: 100%" />
+    </div>
+    <button type="button" class="btn btn-default" data-bind="events:{ click: save}">Submit</button>
+ 
+</form>
